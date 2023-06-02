@@ -27,7 +27,15 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "./public", to: "../" }
-      ]})
+        {
+          from: "./public",
+          to: "../",
+          globOptions: {
+            dot: true,
+            ignore: ['**/.DS_Store']
+          }
+        }
+      ]
+    })
   ],
 };

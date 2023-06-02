@@ -4,7 +4,7 @@
   "description": "connpassのURLを入れたらGaroon予定に反映してくれるやつ",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production && zip dist -r dist",
+    "build": "webpack --mode production && rm -f dist.zip && zip dist -r dist",
     "debug": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
