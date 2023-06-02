@@ -1,0 +1,31 @@
+{
+  "name": "connpass2garoon",
+  "version": "1.0.0",
+  "description": "connpassのURLを入れたらGaroon予定に反映してくれるやつ",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production && zip dist -r dist",
+    "debug": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ehimemikan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.237",
+    "@types/jsonp": "^0.2.1",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
+    "@types/styled-components": "^5.1.26",
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "jsonp": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.11"
+  }
+}

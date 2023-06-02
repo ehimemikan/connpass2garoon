@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "connpass2garoon",
+    "version": "0.1",
+    "description": "connpass2garoon",
+    "icons": {
+        "128": "images/connpass_logo_128.png",
+        "48": "images/connpass_logo_48.png",
+        "32": "images/connpass_logo_32.png",
+        "16": "images/connpass_logo_16.png"
+    },
+    "host_permissions": [
+        "https://*.cybozu.com/g/*",
+        "https://connpass.com/api/v1/event/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.cybozu.com/g/*"
+            ],
+            "js": [
+                "js/content_script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "js/main.js",
+                "images/*"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ]
+}
